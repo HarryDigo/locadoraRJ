@@ -1,0 +1,60 @@
+create database locadorarj;
+use locadorarj;
+
+#tabelas
+
+create table diretor (
+    pk_id integer primary key not null auto_increment,
+    nome varchar (64)
+);
+
+create table genero (
+    pk_id integer primary key not null auto_increment,
+    nome varchar (32)
+);
+
+create table filme (
+    pk_id integer primary key not null auto_increment,
+    fk_diretor integer,
+    fk_genero integer,
+    titulo varchar (128),
+    duracao integer (3),
+    foreign key (fk_diretor) references diretor(pk_id),
+    foreign key (fk_genero) references genero(pk_id)
+);
+
+create table locadora (
+    pk_id integer primary key not null auto_increment,
+    endereco varchar (128)
+);
+
+create table funcionario (
+    pk_cpf varchar (11) primary key not null,
+    fk_filial integer,
+    nome varchar (64),
+    salario double,
+    endereco varchar (128),
+    ativo boolean,
+    foreign key (fk_filial) references locadora(pk_id)
+);
+
+create table cliente (
+    pk_cpf varchar (11) primary key not null,
+    nome varchar (64),
+    endereco varchar (128),
+    email varchar (64)
+);
+
+create table pedido (
+    pk_id integer primary key not null auto_increment,
+    fk_cliente varchar (11),
+    fk_funcionario varchar (11),
+    fk_filme integer,
+    foreign key (fk_cliente) references cliente(pk_cpf),
+    foreign key (fk_funcionario) references funcionario(pk_cpf),
+    foreign key (fk_filme) references filme(pk_id)
+);
+
+desc diretor; desc genero; desc filme; desc locadora; desc funcionario; desc cliente; desc pedido;
+
+#banco de dados criado

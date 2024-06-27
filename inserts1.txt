@@ -29,3 +29,25 @@ insert into filme (fk_diretor, fk_genero, titulo, duracao) values (3, 13, "Pulp 
 insert into filme (fk_diretor, fk_genero, titulo, duracao) values (9, 20, "Deus e o Diabo na Terra do Sol", 120),(12, 4, "Bacurau", 131),(15, 4, "O Demônio das Onze Horas", 115);
 
 insert into filme (fk_diretor, fk_genero, titulo, duracao) values (17, 15, "Stalker", 163),(13, 6, "Psicose", 109),(13, 6, "Um Corpo Que Cai", 128);
+
+insert into cliente (pk_cpf, nome, endereço, email) values 
+("76567555270", "Anthony Pietro", "Rua Rio Pedreira", "anthony_dapaz@3cfast.com.br"),
+("552920116101", "Leonardo Matheus Henrique Porto", "Rua Arcimbald", "Leonardo.matheus.porto@hotmail.com"),
+("76168972756", "Gabrielly Raimunda Pires", "Travessa Padre Cícero", gabrielly-pires99@beminvestir.com.br"),
+("23365521593", "Ryan Bryan Peixoto", "Rua Tomás Rodrigues", "ryanbryanpeixoto@poli.ufrj.br"),
+("83596548837", "Osvaldo Hugo da Mata", "Rua Flamboyant", "osvaldo.hugo.damata@signatreinamentos.com.br"),
+("58225575202", "Gabriel Miguel Bernardo Almada", "Rua B", "gabriel-amada78@araraquara.com.br"),
+("68287910455", "Gael Lucca Cauê Rezende", "Rua João Conceição de Menezes", gael.rezende@etec.sp.gov.br"),
+("18619443224", "Rodrigo Rafael Levi Peixoto", "Rua Felipe Neves", "rodrigo_rafael_peixoto@compuativa.com.br"),
+("41237231442", "Pietro Theo Igor Caldeira", "Rua Doutor Celso Oliva", "pietrotheocaldeira@queirozgalvao.com"),
+("08520170650", "Simone Maya Receba", "Rua Bora Bill", "receba@gmail.com"),
+("76884202025", "Heloisa Valentina", "Rua A", "heloisa_valentina@mrv.com.br"),
+("67407933790", "Francisca Alessandra Emily Mendes", "Rua Francisco Hemetério do Couto", francisca-mendes91@timbrasil.com.br"),
+("42492388735", "Sebastiana Alessandra Pinto", "Rua São Pedro", "sebastiana.alessandra.pinto@cressem.com.br"),
+("44880452513", "Vitória Aurora Carolina Ribeiro", "Rua 26", "vitoria_ribeiro@technew.ind.br"),
+("35850142088", "Márcio Osvaldo Drumond", "Avenida Barão de Maruim", "marcio-drumond78@vnews.com.br"),
+("33230923090", "Pietro Ian da Crzu", "Rua Nova", "pietro_dacruz@uniara.com.br"),
+("32223191541", "Isabelly Bianca Ferreira", "Rua Paraguai", "isabelly-ferreira73@grupointegraambiental.com.br"),
+("38237045165", "Cecília Milena Sophia das Neves", "Rua Principal 218", "cecilia-dasneves90@selaz.com.br"),
+("60320472701", "Martin Marcelo Teixeira", "Vila Alexandre Bourbon", "martin_teixeira@casaarte.com.br"),
+("17272200480", "Theo Nelson Teixeira", "Praça João Olímpio Cordeiro", "theo-teixeira83@hotmail.com");

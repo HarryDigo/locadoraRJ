@@ -1,17 +1,27 @@
-insert into diretor (nome) values("Martin Scorsese"),("Steven Spielberg"),("Quentin Tarantino"),("Christopher Nolan"),("Tim Burton"),("Stanley Kubrick"),("Woody Allen"),("Francis Ford Coppola"),("Glauber Rocha"),("Nelson Pereira dos Santos"),("Daniel Rezende"),("Kleber Mendonça Filho"),("Alfred Hitchcock"),("Akira Kurosawa"),("Jean-Luc Godard"),("George Lucas"),("Andrei Tarkovski"),("Clint Eastwood"),("Rob Zombie"),("Spike Lee");
+insert into diretor (nome) values
+("Martin Scorsese"),("Steven Spielberg"),("Quentin Tarantino"),("Christopher Nolan"),("Tim Burton"),
+("Stanley Kubrick"),("Woody Allen"),("Francis Ford Coppola"),("Glauber Rocha"),("Nelson Pereira dos Santos"),
+("Daniel Rezende"),("Kleber Mendonça Filho"),("Alfred Hitchcock"),("Akira Kurosawa"),("Jean-Luc Godard"),
+("George Lucas"),("Andrei Tarkovski"),("Clint Eastwood"),("Rob Zombie"),("Spike Lee");
 
-insert into genero (nome) values ("Romance"),("Terror"),("Comédia"),("Drama"),("Aventura"),("Suspense"),("Comédia Romântica"),("Ação"),("Musical"),("Documentário"),("Guerra"),("Fantasia"),("Filme Policial"),("Mistério"),("Sci-Fi"),("Ficção"),("Comédia de Ação"), ("Comédia Dramática"),("Dança"),("Faroeste");
+insert into genero (nome) values 
+("Romance"),("Terror"),("Comédia"),("Drama"),("Aventura"),
+("Suspense"),("Comédia Romântica"),("Ação"),("Musical"),("Documentário"),
+("Guerra"),("Fantasia"),("Filme Policial"),("Mistério"),("Sci-Fi"),
+("Ficção"),("Comédia de Ação"), ("Comédia Dramática"),("Dança"),("Faroeste");
 
+insert into filme (fk_diretor, fk_genero, titulo, duracao) values 
+(1, 4, "Taxi Driver", 61), (2, 5, "Jurassic Park", 126), (3, 20, "Django Livre", 165), (3, 13, "Pulp Fiction" , 154), 
+(19, 2, "Halloween 2", 105), (14, 8, "Os Sete Samurais", 207), (16, 15, "Star Wars: Episódio IV - Uma Nova Esperança", 121), (16, 15, "Star Wars: Episódio V - O Império Contra-Ataca", 124), 
+(18, 20, "Os Imperdoáveis", 131), (9, 20, "Deus e o Diabo na Terra do Sol", 120), (12, 4, "Bacurau", 131), (15, 4, "O Demônio das Onze Horas", 115),
+(17, 15, "Stalker", 163), (13, 6, "Psicose", 109), (13, 6, "Um Corpo Que Cai", 128), (11, 4, "Bingo: O Rei das Manhãs", 113), 
+(5, 4, "A Noiva Cadáver", 77), (5, 15, "Frankenweenie", 87), (4, 15, "Sloppenheimer", 180), (6, 2, "O iluminado", 144);
 
+insert into locadora (endereco) values
+("Avenida Governador José Malche, 2030"), ("Rua Quatro Cachoeiras, 142"), ("Travessa Verbena, 67"), ("Praça Mil Oitocentos e Dezessete, 82"), 
+("Rua José Romão, 1017"), ("Rua Leda, 1659"), ("Rua Islã, 2"), ("Rua Governador Jorge Teixeira, 501"), 
+("Rua Caubi Brasil de Magalhães, 3211"), ("Rua Annita Curti, 808"), ("Travessa Fama, 826"), ("Rua Rocha Leão, 120"), 
+("Rua José Bastos, 771"), ("Rua P, 2098"), ("Rua H, 159"), ("Rua Bela Nápolis, 620"), 
+("Rua Dona Bitinha, 120"), ("Rua Osvaldo Paulo Galeno, 70"), ("Rua Mariana Costa de Medeiros, 26"), ("Alameda Plácido de Castro, 700");
 
-insert into filme (fk_diretor, fk_genero, titulo, duracao) values (1, 4, "Taxi Driver", 61);
-
-insert into filme (fk_diretor, fk_genero, titulo, duracao) values (2, 5, "Jurassic Park", 126);
-
-insert into filme (fk_diretor, fk_genero, titulo, duracao) values (3, 20, "Django Livre", 165);
-
-insert into filme (fk_diretor, fk_genero, titulo, duracao) values (3, 13, "Pulp Fiction" , 154),(19, 2, "Halloween 2", 105),(14, 8, "Os Sete Samurais", 207),(16, 15, "Star Wars: Episódio IV - Uma Nova Esperança", 121),(16, 15, "Star Wars: Episódio V - O Império Contra-Ataca", 124),(18, 20, "Os Imperdoáveis", 131); 
-
-insert into filme (fk_diretor, fk_genero, titulo, duracao) values (9, 20, "Deus e o Diabo na Terra do Sol", 120),(12, 4, "Bacurau", 131),(15, 4, "O Demônio das Onze Horas", 115);
-
-insert into filme (fk_diretor, fk_genero, titulo, duracao) values (17, 15, "Stalker", 163),(13, 6, "Psicose", 109),(13, 6, "Um Corpo Que Cai", 128);
+insert into funcionario (pk_cpf, fk_filial, nome, salario, endereco, ativo) values

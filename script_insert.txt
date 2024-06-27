@@ -1,17 +1,3 @@
-alter table pedido add foreign key (fk_cliente) references cliente(pk_cpf);
-
-alter table pedido add foreign key (fk_funcionario) references funcionario(pk_cpf);
-
-alter table pedido add foreign key (fk_filme) references filme(pk_id);
-
-alter table filme add foreign key (fk_diretor) references diretor(pk_id);
-
-alter table filme add foreign key (fk_genero) references genero(pk_id);
-
-alter table funcionario add foreign key (fk_filial) references locadora(pk_id);
-
-insert into diretor values (, Martin Scorsese);
-
 insert into diretor (nome) values("Martin Scorsese"),("Steven Spielberg"),("Quentin Tarantino"),("Christopher Nolan"),("Tim Burton"),("Stanley Kubrick"),("Woody Allen"),("Francis Ford Coppola"),("Glauber Rocha"),("Nelson Pereira dos Santos"),("Daniel Rezende"),("Kleber Mendonça Filho"),("Alfred Hitchcock"),("Akira Kurosawa"),("Jean-Luc Godard"),("George Lucas"),("Andrei Tarkovski"),("Clint Eastwood"),("Rob Zombie"),("Spike Lee");
 
 insert into genero (nome) values ("Romance"),("Terror"),("Comédia"),("Drama"),("Aventura"),("Suspense"),("Comédia Romântica"),("Ação"),("Musical"),("Documentário"),("Guerra"),("Fantasia"),("Filme Policial"),("Mistério"),("Sci-Fi"),("Ficção"),("Comédia de Ação"), ("Comédia Dramática"),("Dança"),("Faroeste");

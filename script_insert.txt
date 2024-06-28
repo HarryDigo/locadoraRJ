@@ -46,7 +46,7 @@ insert into funcionario (pk_cpf, fk_filial, nome, salario, endereco, ativo) valu
     ("97885834158", 4, "Kaique Francisco Araújo", 1412, "Rua Deputado José Gaudêncio", TRUE),
     ("78656761972", 13, "Kauê Giovanni Rafael Rezende", 1412, "Quadra QS 404 Conjunto C", TRUE),
     ("09626624450", 12, "y Lucca Vieira", 2824, "Rua da Lua", TRUE),
-    ("92073469511", 19, "Vicente Marcelo", 2824, "Rua 7 de Setembro 2", TRUE),
+    ("92073469511", 19, "Vicente Marcelo", 2824, "Rua 11 de Setembro 2", TRUE),
     ("47217788722", 18, "helena Isadora Rocha", 2824, "Rua José Carlos Medaglia", FALSE);
 
 insert into cliente (pk_cpf, nome, endereco, email) values 

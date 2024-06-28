@@ -1,27 +1,196 @@
+#inserts
+
 insert into diretor (nome) values
-("Martin Scorsese"),("Steven Spielberg"),("Quentin Tarantino"),("Christopher Nolan"),("Tim Burton"),
-("Stanley Kubrick"),("Woody Allen"),("Francis Ford Coppola"),("Glauber Rocha"),("Nelson Pereira dos Santos"),
-("Daniel Rezende"),("Kleber Mendonça Filho"),("Alfred Hitchcock"),("Akira Kurosawa"),("Jean-Luc Godard"),
-("George Lucas"),("Andrei Tarkovski"),("Clint Eastwood"),("Rob Zombie"),("Spike Lee");
+    ("Martin Scorsese"), ("Steven Spielberg"), ("Quentin Tarantino"), ("Christopher Nolan"), ("Tim Burton"),
+    ("Stanley Kubrick"), ("Woody Allen"), ("Francis Ford Coppola"), ("Glauber Rocha"), ("Nelson Pereira dos Santos"),
+    ("Daniel Rezende"), ("Kleber Mendonça Neto"),("Alfred Hitchcock"), ("Akira Kurosawa"), ("Jean-Luc Godard"),
+    ("George Lucas"), ("Andrei Tarkovski"), ("Clinte Esteúde"), ("Robin Zambie"), ("Spike Lee");
 
 insert into genero (nome) values 
-("Romance"),("Terror"),("Comédia"),("Drama"),("Aventura"),
-("Suspense"),("Comédia Romântica"),("Ação"),("Musical"),("Documentário"),
-("Guerra"),("Fantasia"),("Filme Policial"),("Mistério"),("Sci-Fi"),
-("Ficção"),("Comédia de Ação"), ("Comédia Dramática"),("Dança"),("Faroeste");
+    ("Romance"), ("Terror"), ("Comédia"), ("Drama"), ("Aventura"),
+    ("Depressão"), ("Comédia Romântica"), ("Ação"), ("Musical"), ("Documentário"),
+    ("Guerra"), ("Fantasia Medieval"), ("Filme Policial"), ("Mistério"), ("Sci-Fi"),
+    ("Ficção Real"), ("Comédia de Ação"), ("Comédia Dramática"), ("Dança"), ("Faroeste");
 
 insert into filme (fk_diretor, fk_genero, titulo, duracao) values 
-(1, 4, "Taxi Driver", 61), (2, 5, "Jurassic Park", 126), (3, 20, "Django Livre", 165), (3, 13, "Pulp Fiction" , 154), 
-(19, 2, "Halloween 2", 105), (14, 8, "Os Sete Samurais", 207), (16, 15, "Star Wars: Episódio IV - Uma Nova Esperança", 121), (16, 15, "Star Wars: Episódio V - O Império Contra-Ataca", 124), 
-(18, 20, "Os Imperdoáveis", 131), (9, 20, "Deus e o Diabo na Terra do Sol", 120), (12, 4, "Bacurau", 131), (15, 4, "O Demônio das Onze Horas", 115),
-(17, 15, "Stalker", 163), (13, 6, "Psicose", 109), (13, 6, "Um Corpo Que Cai", 128), (11, 4, "Bingo: O Rei das Manhãs", 113), 
-(5, 4, "A Noiva Cadáver", 77), (5, 15, "Frankenweenie", 87), (4, 15, "Sloppenheimer", 180), (6, 2, "O iluminado", 144);
+    (1, 4, "Taxi Driver", 61), (2, 5, "Jurassic Park", 126), (3, 20, "Django Livre", 165), (3, 13, "Pulp Fiction" , 154), 
+    (19, 2, "Halloween 2", 105), (14, 8, "Os Sete Samurais", 999), (16, 15, "Star Wars: Episódio IV - Uma Nova Esperança", 121), (16, 15, "Star Wars: Episódio V - O Império Contra-Ataca", 124), 
+    (18, 20, "Os Imperdoáveis", 131), (9, 20, "Deus e o Diabo na Terra do Sol", 120), (12, 4, "Bacurau", 131), (15, 4, "O Demônio das Doze Horas", 115),
+    (17, 15, "Stalker", 163), (13, 6, "Psicose", 109), (13, 6, "Um Corpo Que Cai", 128), (11, 4, "Bingo: O Rei das Manhãs", 113), 
+    (5, 4, "A Noiva Cadáver", 77), (5, 15, "Frankenweenie", 87), (4, 15, "Sloppenheimer", 180), (6, 2, "O iluminado", 144);
 
 insert into locadora (endereco) values
-("Avenida Governador José Malche, 2030"), ("Rua Quatro Cachoeiras, 142"), ("Travessa Verbena, 67"), ("Praça Mil Oitocentos e Dezessete, 82"), 
-("Rua José Romão, 1017"), ("Rua Leda, 1659"), ("Rua Islã, 2"), ("Rua Governador Jorge Teixeira, 501"), 
-("Rua Caubi Brasil de Magalhães, 3211"), ("Rua Annita Curti, 808"), ("Travessa Fama, 826"), ("Rua Rocha Leão, 120"), 
-("Rua José Bastos, 771"), ("Rua P, 2098"), ("Rua H, 159"), ("Rua Bela Nápolis, 620"), 
-("Rua Dona Bitinha, 120"), ("Rua Osvaldo Paulo Galeno, 70"), ("Rua Mariana Costa de Medeiros, 26"), ("Alameda Plácido de Castro, 700");
+    ("Avenida Governador José Malche, 2030"), ("Rua Quatro Cachoeiras, 142"), ("Travessa Verbena, 67"), ("Praça Mil Oitocentos e Dezessete, 82"), 
+    ("Rua José Romão, 1017"), ("Rua Leda, 1659"), ("Rua Islã, 2"), ("Rua Governador Jorge Teixeira, 501"), 
+    ("Rua Caubi Brasil de Magalhães, 3211"), ("Rua Annita Curti, 808"), ("Travessa Fama, 826"), ("Rua Rocha Leão, 120"), 
+    ("Rua José Bastos, 771"), ("Rua P, 2098"), ("Rua H, 159"), ("Rua Bela Nápolis, 620"), 
+    ("Rua Dona Bitinha, 120"), ("Rua Osvaldo Paulo Gala, 69"), ("Rua Mariana Costa de Medeiros, 26"), ("Alameda Plácido de Castro, 700");
 
-insert into funcionario (pk_cpf, fk_filial, nome, salario, endereco, ativo) values
+insert into funcionario (pk_cpf, fk_filial, nome, salario, endereco, ativo) values 
+    ("47540354534", 2, "Fábio Thiago Davi Porto", 1412, "Rua Seu Zé Bezerra", TRUE),
+    ("35592672420", 1, "Carolina Betina Martins", 2824, "Quadra Dezessete", TRUE),
+    ("54662966787", 1, "Breno Erick Guilherme Sales", 2824, "Rua Rio Pacavi", FALSE),
+    ("73619463565", 8, "Luiz Leandro de Paula", 1412, "Rua Florestan Fernandes", TRUE),
+    ("88850654650", 20, "Theo Breno de Paula", 1412, "Rua Florestan Fernandes", FALSE),
+    ("35616484016", 17, "Amanda Silvana Cláudia da Silva", 4236, "Avenida Balcans", TRUE),
+    ("76933174069", 14, "Diego Pietro Oliveira", 4236, "Beco Eunice Fernandes Ribeiro", TRUE),
+    ("95454545988", 13, "Reeeee Daiane Aparecida da Mata", 4236, "Rua Vinte e Oito", TRUE),
+    ("59650383727", 11, "Rafael Ricardo Araújo", 2824, "Rua Corinthians", FALSE),
+    ("56402667595", 10, "Lorena Stella Valentina Novaes", 1412, "Rua Eneas França", TRUE),
+    ("23510365143", 5, "Alícia Eduarda Cavalcanti", 1412, "Rua Vitória Alves da Silva", TRUE),
+    ("58670913410", 1, "Camila Jennifer Valentina Silva", 2824, "Rua Presidente Prudente", TRUE),
+    ("32746961377", 7, "Giovana Carolina Ramos", 2824, "Rua Badaró Junior", FALSE),
+    ("35331730388", 8, "Eloá Patrícia Clarice dos Santos", 2824, "Residencial Torquato Neto III", TRUE),
+    ("71286800390", 4, "André Fernando Baptista", 2824, "Rua CC-11", TRUE),
+    ("99553377025", 4, "Hugo Enrico Gonçalves", 1412, "Praça Breno Pinheiro Valadares", TRUE),
+    ("97885834158", 4, "Kaique Francisco Araújo", 1412, "Rua Deputado José Gaudêncio", TRUE),
+    ("78656761972", 13, "Kauê Giovanni Rafael Rezende", 1412, "Quadra QS 404 Conjunto C", TRUE),
+    ("09626624450", 12, "y Lucca Vieira", 2824, "Rua da Lua", TRUE),
+    ("92073469511", 19, "Vicente Marcelo", 2824, "Rua 7 de Setembro 2", TRUE),
+    ("47217788722", 18, "helena Isadora Rocha", 2824, "Rua José Carlos Medaglia", FALSE);
+
+insert into cliente (pk_cpf, nome, endereco, email) values 
+    ("76567555270", "Anthony Pietro", "Rua Rio Pedreira", "anthony_dapaz@3cfast.com.br"),
+    ("55292011610", "Leonardo Matheus Henrique Porto", "Rua Arcimbald", "Leonardo.matheus.porto@hotmail.com"),
+    ("76168972756", "Gabrielly Raimunda Pires", "Travessa Padre Cícero", "gabrielly-pires99@beminvestir.com.br"),
+    ("23365521593", "Ryan Bryan Peixoto", "Rua Tomás Rodrigues", "ryanbryanpeixoto@poli.ufrj.br"),
+    ("83596548837", "Osvaldo Hugo da Mata", "Rua Flamboyant", "osvaldo.hugo.damata@signatreinamentos.com.br"),
+    ("58225575202", "Gabriel Miguel Bernardo Almada", "Rua B", "gabriel-amada78@araraquara.com.br"),
+    ("68287910455", "Gael Lucca Cauê Rezende", "Rua João Conceição de Menezes", "gael.rezende@etec.sp.gov.br"),
+    ("18619443224", "Rodrigo Rafael Levi Peixoto", "Rua Felipe Neves", "rodrigo_rafael_peixoto@compuativa.com.br"),
+    ("41237231442", "Pietro Theo Igor Caldeira", "Rua Doutor Celso Oliva", "pietrotheocaldeira@queirozgalvao.com"),
+    ("08520170650", "Simone Maya Receba", "Rua Bora Bill", "receba@gmail.com"),
+    ("76884202025", "Heloisa Valentina", "Rua A", "heloisa_valentina@mrv.com.br"),
+    ("67407933790", "Francisca Alessandra Emily Mendes", "Rua Francisco Hemetério do Couto", "francisca-mendes91@timbrasil.com.br"),
+    ("42492388735", "Sebastiana Alessandra Pinto", "Rua São Pedro", "sebastiana.alessandra.pinto@cressem.com.br"),
+    ("44880452513", "Vitória Aurora Carolina Ribeiro", "Rua 26", "vitoria_ribeiro@technew.ind.br"),
+    ("35850142088", "Márcio Osvaldo Drumond", "Avenida Barão de Maruim", "marcio-drumond78@vnews.com.br"),
+    ("33230923090", "Pietro Ian da Crzu", "Rua Nova", "pietro_dacruz@uniara.com.br"),
+    ("32223191541", "Isabelly Bianca Ferreira", "Rua Paraguai", "isabelly-ferreira73@grupointegraambiental.com.br"),
+    ("38237045165", "Cecília Milena Sophia das Neves", "Rua Principal 218", "cecilia-dasneves90@selaz.com.br"),
+    ("60320472701", "Martin Marcelo Teixeira", "Vila Alexandre Bourbon", "martin_teixeira@casaarte.com.br"),
+    ("17272200480", "Theo Nelson Teixeira", "Praça João Olímpio Cordeiro", "theo-teixeira83@hotmail.com");
+    
+insert into pedido (fk_cliente, fk_funcionario, fk_filme) values
+    ("18619443224", "47540354534", 1), ("55292011610", "35592672420", 2), ("76168972756", "54662966787", 3), ("23365521593", "73619463565", 5),
+    ("32223191541", "35592672420", 5), ("60320472701", "78656761972", 5), ("58225575202", "99553377025", 6), ("83596548837", "73619463565", 7),
+    ("17272200480", "99553377025", 8), ("32223191541", "95454545988", 6), ("18619443224", "56402667595", 11), ("18619443224", "54662966787", 16),
+    ("55292011610", "95454545988", 20), ("55292011610", "99553377025", 19), ("17272200480", "35592672420", 18), ("42492388735", "35592672420", 8),
+    ("60320472701", "35592672420", 20), ("76168972756", "73619463565", 3), ("08520170650", "95454545988", 2), ("55292011610", "58670913410", 1);
+  
+#deletes
+
+delete from diretor where pk_id = 8;
+delete from diretor where nome like "%Spike%";
+
+delete from genero where pk_id = 17;
+delete from genero where pk_id = 14;
+
+delete from filme where pk_id = 4;
+delete from filme where pk_id = 17;
+
+delete from locadora where pk_id = 9;
+delete from locadora where pk_id = 3;
+
+delete from funcionario where pk_cpf = "97885834158";
+delete from funcionario where pk_cpf = "47217788722";
+
+delete from cliente where pk_cpf = "76567555270";
+delete from cliente where pk_cpf = "38237045165";
+
+delete from pedido where fk_cliente = "76567555270";
+delete from pedido where fk_cliente = "38237045165";
+
+#updates
+
+update diretor
+    set nome = "Rob Zombie"
+    where pk_id = 19;
+
+update diretor
+    set nome = "Clint Eastwood"
+    where pk_id = 18;
+
+update diretor
+    set nome = "Kleber Mendonça Filho"
+    where pk_id = 12;
+
+
+update genero
+    set nome = "Ficção"
+    where pk_id = 16;
+
+update genero
+    set nome = "Suspense"
+    where pk_id = 6;
+
+update genero
+    set nome = "Fantasia"
+    where pk_id = 12;
+
+
+update filme
+    set duracao = 207
+    where pk_id = 6;
+
+update filme
+    set titulo = "Oppenheimer"
+    where titulo like "%Slop%";
+
+update filme
+    set titulo = "O Demônio das Onze Horas"  
+    where titulo like "%Doze%";
+
+
+update locadora
+    set endereco = "Avenida Governador José Malche, 2030"
+    where pk_id = 1;
+
+update locadora
+    set endereco = "Rua Horácio Neves, 159"
+    where pk_id = 15;
+
+update locadora
+    set endereco = "Avenida Governador José Malche, 2030"
+    where pk_id = 1;
+
+
+update funcionario 
+    set nome = "Regina Daiane Aparecida da Mata" 
+    where pk_cpf = "95454545988";
+
+update funcionario 
+    set nome = "Yuri Lucca Vieira"
+    where pk_cpf = "09626624450";
+
+update funcionario 
+    set nome = "Helena Isadora Rocha"
+    where pk_cpf = "47217788722";
+
+
+update cliente
+    set nome = "Simone Maya Rebeca"
+    where pk_cpf = "08520170650";
+
+update cliente
+    set endereco = "Rua Giovanni Filho"
+    where pk_cpf = "08520170650";
+
+update cliente
+    set email = "simonerebeca@gmail.com"
+    where pk_cpf = "08520170650";
+
+
+update pedido
+    set fk_filme = 6
+    where pk_id = 1;
+
+update pedido 
+    set fk_filme = 19
+    where pk_id = 2;
+
+update pedido
+    set fk_filme = 11
+    where pk_id = 3;
+
+#inserts, deletes e updates feitos

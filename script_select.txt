@@ -1,0 +1,48 @@
+# selects
+
+select * from filme;
+
+select pk_id, nome from diretor
+    where nome = "Quentin Tarantino";
+
+select pk_cpf, nome, salario from funcionario
+where UPPER(nome) like "%PAULA%";
+
+select * from cliente
+    order by nome;
+
+select cliente.nome, pedido.pk_id
+    from cliente, pedido
+    where cliente.pk_cpf = pedido.fk_cliente
+    order by cliente.nome;
+
+select genero.nome, genero.pk_id, diretor.nome
+    from genero
+    inner join diretor
+    on (genero.pk_id = diretor.pk_id);
+
+select funcionario.nome, locadora.endereco
+    from funcionario
+    left outer join locadora
+    on (funcionario.fk_filial = locadora.pk_id)
+
+union
+
+select funcionario.nome, pedido.pk_id
+    from funcionario
+    right outer join pedido
+    on (funcionario.pk_cpf = pedido.fk_funcionario);
+
+select avg(salario) from funcionario;
+    select max(salario) from funcionario;
+    select min(salario) from funcionario;
+
+select count(pk_cpf) 
+    from funcionario
+    where salario = 1412;
+
+select count(*)
+    from filme
+    having count(*) >= 10;
+
+#selects feitos

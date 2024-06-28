@@ -32,7 +32,7 @@ insert into filme (fk_diretor, fk_genero, titulo, duracao) values (17, 15, "Stal
 
 insert into cliente (pk_cpf, nome, endereço, email) values 
 ("76567555270", "Anthony Pietro", "Rua Rio Pedreira", "anthony_dapaz@3cfast.com.br"),
-("552920116101", "Leonardo Matheus Henrique Porto", "Rua Arcimbald", "Leonardo.matheus.porto@hotmail.com"),
+("55292011610", "Leonardo Matheus Henrique Porto", "Rua Arcimbald", "Leonardo.matheus.porto@hotmail.com"),
 ("76168972756", "Gabrielly Raimunda Pires", "Travessa Padre Cícero", gabrielly-pires99@beminvestir.com.br"),
 ("23365521593", "Ryan Bryan Peixoto", "Rua Tomás Rodrigues", "ryanbryanpeixoto@poli.ufrj.br"),
 ("83596548837", "Osvaldo Hugo da Mata", "Rua Flamboyant", "osvaldo.hugo.damata@signatreinamentos.com.br"),
@@ -51,3 +51,71 @@ insert into cliente (pk_cpf, nome, endereço, email) values
 ("38237045165", "Cecília Milena Sophia das Neves", "Rua Principal 218", "cecilia-dasneves90@selaz.com.br"),
 ("60320472701", "Martin Marcelo Teixeira", "Vila Alexandre Bourbon", "martin_teixeira@casaarte.com.br"),
 ("17272200480", "Theo Nelson Teixeira", "Praça João Olímpio Cordeiro", "theo-teixeira83@hotmail.com");
+
+insert into funcionario (pk_cpf, fk_filial, nome, salario, endereco, ativo) values 
+("47540354534", 2, "Fábio Thiago Davi Porto", 1412, "Rua Seu Zé Bezerra", TRUE),
+("35592672420", 1, "Carolina Betina Martins", 2824, "Quadra Dezessete", TRUE),
+("54662966787", 1, "Breno Erick Guilherme Sales", 2824, "Rua Rio Pacavi", FALSE),
+("73619463565", 8, "Luiz Leandro de Paula", 1412, "Rua Florestan Fernandes", TRUE),
+("88850654650", 20, "Theo Breno de Paula", 1412, "Rua Florestan Fernandes", FALSE),
+("35616484016", 17, "Amanda Silvana Cláudia da Silva", 4236, "Avenida Balcans", TRUE),
+("76933174069", 14, "Diego Pietro Oliveira", 4236, "Beco Eunice Fernandes Ribeiro", TRUE),
+("95454545988", 13, "Reeeee Daiane Aparecida da Mata", 4236, "Rua Vinte e Oito", TRUE),
+("59650383727", 11, "Rafael Ricardo Araújo", 2824, "Rua Corinthians", FALSE),
+("56402667595", 10, "Lorena Stella Valentina Novaes", 1412 "Rua Eneas França", TRUE),
+("23510365143", 5, "Alícia Eduarda Cavalcanti", 1412, "Rua Vitória Alves da Silva", TRUE),
+("58670913410", 1, "Camila Jennifer Valentina Silva", 2824, "Rua Presidente Prudente", TRUE),
+("32746961377", 7, "Giovana Carolina Ramos", 2824, "Rua Badaró Junior", FALSE),
+("35331730388", 8, "Eloá Patrícia Clarice dos Santos", 2824, "Residencial Torquato Neto III", TRUE),
+("71286800390", 4, "André Fernando Baptista", 2824, "Rua CC-11", TRUE),
+("99553377025", 4, "Hugo Enrico Gonçalves", 1412, "Praça Breno Pinheiro Valadares", TRUE),
+("97885834158", 4, "Kaique Francisco Araújo", 1412, "Rua Deputado José Gaudêncio", TRUE),
+("78656761972", 13, "Kauê Giovanni Rafael Rezende", 1412, "Quadra QS 404 Conjunto C", TRUE),
+("09626624450", 12, "y Lucca Vieira", 2824, "Rua da Lua", TRUE),
+("92073469511", 19, "Vicente Marcelo", 2824, "Rua 7 de Setembro 2", TRUE),
+("47217788722", 18, "helena Isadora Rocha", 2824, "Rua José Carlos Medaglia", FALSE);
+
+insert into pedidos (fk_cliente, fk_funcionario, fk_filme) values
+("76567555270", "47540354534", 1), ("55292011610", "35592672420", 2), ("76168972756", "54662966787", 3), ("23365521593", "73619463565", 5),
+("76567555270", "35592672420", 5), ("60320472701", "97885834158", 5), ("58225575202", "99553377025", 6), ("38237045165", "73619463565", 7),
+("17272200480", "99553377025", 8), ("32223191541", "95454545988", 6), ("18619443224", "56402667595", 11), ("18619443224", "97885834158", 16),
+("55292011610", "95454545988", 20), ("55292011610", "99553377025", 19),
+
+delete from genero where pk_id = 1;
+delete from genero where pk_id = 17;
+
+delete from filme where pk_id = 4;
+delete from filme where pk_id = 17;
+
+delete from cliente where pk_cpf = "76567555270";
+delete from cliente where pk_cpf = "38237045165";
+
+delete from funcionario where pk_cpf = "97885834158"
+delete from funcionario where pk_cpf = "47217788722"
+
+update funcionario 
+set nome = "Regina Daiane Aparecida da Mata" 
+where pk_cpf = "95454545988";
+
+update funcionario 
+set nome = "Yuri Lucca Vieira"
+where pk_cpf = "09626624450";
+
+update funcionario 
+set nome = "Helena Isadora Rocha"
+where pk_cpf = "47217788722";
+
+
+update cliente
+set nome = "Simone Maya Rebeca"
+where pk_cpf = "08520170650";
+
+update cliente
+set endereco = "Rua Giovanni Filho"
+where pk_cpf = "08520170650";
+
+update cliente
+set email = "simonerebeca@gmail.com"
+where pk_cpf = "08520170650";
+
+
